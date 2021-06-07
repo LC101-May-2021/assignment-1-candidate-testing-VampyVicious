@@ -51,7 +51,7 @@ function gradeQuiz(candidateAnswers) {
   let grade;
   let gradedCorrectAnswers = 0; 
   for (let i = 0; i <= questions.length-1; i++){
-    if (candidateAnswers[i] === correctAnswers[i]){
+    if (candidateAnswers[i].toLowerCase === correctAnswers[i].toLowerCase){
       gradedCorrectAnswers = gradedCorrectAnswers + 1;
     } 
     
